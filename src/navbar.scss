@@ -1,0 +1,52 @@
+
+$main_red: #ff3b36;
+$darker_red: #dd3431;
+$lighter_red: #ff9d9b;
+$main_gray: #354042;
+$main_yellow: #ffc107;
+
+.navbar {
+    background-color: $main_red;
+    height: 70px;
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
+
+    #logoSmall {
+        width: 40px;
+        display: inline-block;
+        padding: 15px 20px;
+        z-index: 2001;
+    }
+
+    .navLinks {
+        float: right;
+        height: 100%;
+        padding: 0px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2002;
+
+        a.navLink {
+            margin: 0px 15px;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+        }
+
+        a.navLink.plain {
+            color: whitesmoke;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a.navLink.plain:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+
+#red_shape_1 {
+    top: 70px;
+}

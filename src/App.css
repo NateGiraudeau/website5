@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+#bgAnim {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+  z-index: -2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-main {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-main .page-main-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  width: 80%;
+  max-width: 700px;
+  transform: translateY(-6vh);
+}
+.page-main .page-main-center #logo {
+  width: 80px;
+  margin: 0px auto;
+}
+.page-main .page-main-center h1 {
+  font-size: 5.5em;
+  margin: 0;
+  color: #354042;
+}
+.page-main .page-main-center hr {
+  width: 470px;
+  max-width: 95%;
+  margin: 5px auto;
+  background: #ff3b36;
+  height: 2px;
+  border: none;
+  border-radius: 1px;
+}
+.page-main .page-main-center p {
+  font-size: 1.4em;
+}
+.page-main .scroll-icon {
+  display: block;
+  position: absolute;
+  bottom: 35px;
+  width: 50px;
+  height: 50px;
+  margin: 0 -25px;
+  transform: translateX(50vw);
+  outline: none;
+}
+
+.page-second {
+  width: 100%;
+}
+.page-second .panel1 {
+  max-width: 66%;
+  width: 700px;
+  margin: 18% 10% 5%;
+  background-color: #ff3b36;
+  color: white;
+  padding: 1% 3% 2%;
+  border-radius: 20px;
+  box-shadow: -27px 27px 0px #ff9d9b;
+}
+.page-second .panel1 h1 {
+  font-size: 4em;
+  margin-bottom: 0px;
+}
+.page-second .panel1 p {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+@media screen and (max-width: 850px) {
+  .page-second .panel1 {
+    border-radius: 10px;
+    margin: 12% auto 5%;
+    padding: 1% 5%;
+  }
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  margin: 0 auto;
+  padding: 2px 30px 0px;
+  border-radius: 10px;
+  background: #354042;
+  box-shadow: 0px 3px 0px #141b1c;
+}
+
+.page-third {
+  background-color: #ff3b36;
+  margin: 0px;
+  padding: 4% 10% 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.page-third h1 {
+  margin: 0;
+  font-size: 3.4em;
+}
+.page-third p {
+  margin: 0.5% auto 1.5%;
+  font-size: 1.5em;
+  max-width: 700px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  box-shadow: 0px 7px 0px #141b1c;
+  transform: translateY(-4px);
 }
+
+.button:active, .button.primary:active {
+  box-shadow: none !important;
+  transform: translateY(3px) !important;
+}
+
+.button.primary {
+  color: black;
+  background: #ffc107;
+  box-shadow: 0px 3px 0px #e8a702;
+}
+
+.button.white {
+  color: #ff3b36;
+  background: whitesmoke;
+  box-shadow: 0px 3px 0px #cfcfcf;
+}
+
+.button.white:hover {
+  box-shadow: 0px 7px 0px #cfcfcf;
+  transform: translateY(-4px);
+}
+
+.button.red {
+  color: whitesmoke;
+  background: #ff3b36;
+  box-shadow: 0px 3px 0px #dd3431;
+}
+
+.button.red:hover {
+  box-shadow: 0px 7px 0px #dd3431;
+  transform: translateY(-4px);
+}
+
+.button.primary:hover {
+  box-shadow: 0px 7px 0px #e8a702;
+  transform: translateY(-4px);
+}
+
+.button.big {
+  line-height: 46px;
+  font-size: 1.06em;
+  letter-spacing: 0.18em;
+  padding: 2px 40px 0px;
+  border-radius: 23px;
+}
+
+.scroll-shape {
+  position: absolute;
+}
+
+.scroll-shape.one {
+  right: 0px;
+  top: 73vh;
+}
+
+#scrollShape1 {
+  width: 17vw;
+  right: 0px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+#scrollShape2 {
+  width: 16vw;
+  margin: 6% 0px -7px;
+  opacity: 1;
+}
+
+#red_shape_1 {
+  width: 20vw;
+}
+
+/*# sourceMappingURL=App.css.map */

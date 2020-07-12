@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #ff3b36;
+  height: 70px;
+  z-index: 2000;
+  position: absolute;
+  width: 100%;
+}
+.navbar #logoSmall {
+  width: 40px;
+  display: inline-block;
+  padding: 15px 20px;
+  z-index: 2001;
+}
+.navbar .navLinks {
+  float: right;
+  height: 100%;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2002;
+}
+.navbar .navLinks a.navLink {
+  margin: 0px 15px;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+.navbar .navLinks a.navLink.plain {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar .navLinks a.navLink.plain:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#red_shape_1 {
+  top: 70px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
